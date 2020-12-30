@@ -1,0 +1,28 @@
+.grid-container {
+  display: grid;
+  /* grid-template-columns: ;
+  grid-template-rows: ; */
+  gap: 1%;
+}
+
+header {
+  background-image: url('../images/pexels-cottonbro-4614106.jpg');
+  height: 60vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+  padding: 20px 5px;
+}
+
+.logo {
+  width: 30%;
+}
+
+ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
