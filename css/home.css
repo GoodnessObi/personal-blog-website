@@ -12,6 +12,7 @@ header {
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 .wrapper {
@@ -40,8 +41,8 @@ footer {
 
 .wrapper aside {
   grid-area: 2/1/auto/13;
-  /* border: 0.01px solid #c0e218; */
-  background-color:#dbf16c;
+  border: 0.01px solid #eee;
+  /* background-color:#dbf16c; */
   border-radius: 10px;
   padding: 5px;
 }
@@ -141,7 +142,7 @@ article p {
   margin: 5px 0;
 }
 
-article button {
+article button a{
   background-color: #c70039;
   border: 1px solid #c70039;
   font-family: 'Raleway', sans-serif;
@@ -151,18 +152,67 @@ article button {
   cursor: pointer;
   text-transform: capitalize;
   color: #fff;
+  text-decoration: none;
 }
 
-article button:hover,
-article button:focus {
+article button a:hover,
+article button a:focus {
   transform: scale(1.03);
   background-color: #f16c19;
   border: 1px solid #f16c19;
   outline: 0;
 }
 
-article:not(:last-child) {
+article:not(:last-child),
+.recent-post1:not(:last-child) {
   border-bottom: 1px solid #eee;
+}
+
+aside section {
+  background-color:#dbf16c;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.author-image,
+.recent-post-img-container {
+  width: 75%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.recent-post-img-container {
+  height: 200px;
+}
+
+aside h3,
+aside h4 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #c70039;
+  font-family: inherit;
+}
+
+.recent-post .recent-post-title,
+.about-author .author-description {
+  padding-top: 8px;
+}
+
+.about-author {
+  /* border-bottom: 1px solid #eee; */
+  padding-bottom: 50px;
+  margin-bottom: 8px;
+}
+
+.recent-post {
+  padding-top: 50px;
+}
+
+.recent-post1 {
+  padding-top: 5px;
+  padding-bottom: 20px;
 }
 
 /* Medium Screens */
