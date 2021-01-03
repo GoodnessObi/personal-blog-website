@@ -8,6 +8,7 @@ a {
 
 .back-arrow {
   color: #f16c19;
+  margin-left: 15px;
 }
 
 article h2 {
@@ -50,6 +51,9 @@ article a {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 li {
