@@ -91,14 +91,14 @@ nav ul a.active {
   color: #f37121;
 }
 
-article {
+.blog-card {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: auto;
   padding: 8px;
 }
 
-article .article-image {
+.blog-card .blog-card-image {
   grid-column: 1/3;
   width: 100%;
   height: 300px;
@@ -106,43 +106,43 @@ article .article-image {
   border-radius: 10px;
 }
 
-article .article-body {
+.blog-card .blog-card-body {
   grid-column: 3/6;
   margin-left: 5px;
 }
 
-article .article-body:hover h3 {
+.blog-card .blog-card-body:hover h3 {
  text-decoration: underline;
 }
 
-article .article-body:hover img {
+.blog-card .blog-card-body:hover img {
   transform: scale(1.1);
  }
 
-article img {
+.blog-card img {
   width: auto;
   min-height: 100%;
   height: 100%;
 }
 
-article img:hover {
+.blog-card img:hover {
   transform: scale(1.1);
 }
 
-article .article-body:hover img {
+.blog-card .blog-card-body:hover img {
   transform: scale(1.1);
  }
 
-article h3 {
+h3 {
   color: #c70039;
   text-transform: uppercase;
 }
 
-article p {
+.blog-card p {
   margin: 5px 0;
 }
 
-article button a{
+.blog-card button a{
   background-color: #c70039;
   border: 1px solid #c70039;
   font-family: 'Raleway', sans-serif;
@@ -155,15 +155,15 @@ article button a{
   text-decoration: none;
 }
 
-article button a:hover,
-article button a:focus {
+.blog-card button a:hover,
+.blog-card button a:focus {
   transform: scale(1.03);
   background-color: #f16c19;
   border: 1px solid #f16c19;
   outline: 0;
 }
 
-article:not(:last-child),
+.blog-card:not(:last-child),
 .recent-post1:not(:last-child) {
   border-bottom: 1px solid #eee;
 }
@@ -229,7 +229,7 @@ aside h4 {
     grid-area: 1/9/auto/13;
   }
 
-  article img {
+  .blog-card img {
     width: 100%;
     height: auto;
   }
@@ -266,7 +266,7 @@ aside h4 {
     grid-area: 1/9/auto/13;
   }
 
-  article img {
+  .blog-card img {
     width: 100%;
     height: auto;
   }

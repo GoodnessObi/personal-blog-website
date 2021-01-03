@@ -1,0 +1,57 @@
+article {
+  padding: 0 50px;
+}
+
+a {
+  cursor: pointer;
+}
+
+.back-arrow {
+  color: #f16c19;
+}
+
+article h2 {
+  text-align: center;
+  margin: 10px 0;
+  color: #c70039;
+  text-transform: uppercase;
+}
+
+article p {
+  line-height: 1.25;
+  padding-bottom: 15px;
+}
+
+article figure {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Redressed', cursive;
+  color: #111d5e;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+
+article a {
+  color: #c0e218;
+}
+
+.article-image {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin: 5px;
+}
