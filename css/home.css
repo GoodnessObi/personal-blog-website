@@ -4,6 +4,7 @@
   grid-template-rows: 30vh auto auto;
   margin: 10px;
   gap: 1%;
+  color: #111d5e;
 }
 
 header {
@@ -26,7 +27,7 @@ header {
 footer {
   grid-area: 3/1/auto/13;
   font-family: 'Redressed', cursive;
-  color: #c70039;
+  color: #111d5e;
   text-align: center;
   padding: 8px;
 }
@@ -34,14 +35,14 @@ footer {
 .wrapper main {
   grid-area: 1/1/auto/13;
   font-family: 'Raleway', sans-serif;
-  border: 0.01px solid #eee;
+  border: 1px solid #ccc;
   border-radius: 10px;
   padding: 5px;
 }
 
 .wrapper aside {
   grid-area: 2/1/auto/13;
-  border: 0.01px solid #eee;
+  border: 1px solid #ccc;
   border-radius: 10px;
   padding: 5px;
 }
@@ -62,13 +63,16 @@ nav ul {
   font-weight: 600;
 }
 
-nav .logo {
-  width: 100%;
+.logo {
   font-family: 'Redressed', cursive;
   text-decoration: none;
   color: #c70039;
-  font-size: 30px;
   text-align: center;
+}
+
+nav .logo {
+  font-size: 30px;
+  width: 100%;
 }
 
 nav ul a {
@@ -134,7 +138,7 @@ h3 {
 }
 
 .blog-card p {
-  margin: 5px 0;
+  margin: 15px 0;
 }
 
 .blog-card button a{
@@ -143,7 +147,7 @@ h3 {
   font-family: 'Raleway', sans-serif;
   padding: 5px 10px;
   border-radius: 10px;
-  margin-top: 5px;
+  margin-top: 15px;
   cursor: pointer;
   text-transform: capitalize;
   color: #fff;
@@ -160,11 +164,11 @@ h3 {
 
 .blog-card:not(:last-child),
 .recent-post1:not(:last-child) {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ccc;
 }
 
 aside section {
-  background-color:#dbf16c;
+  background-color:#eee;
   padding: 50px;
   border-radius: 10px;
   text-align: center;
@@ -205,6 +209,39 @@ aside h4 {
   padding-bottom: 20px;
 }
 
+.footer {
+  background-color: #dbf16c;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.footer .logo {
+  font-size: 20px;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+.footer .social-media-link {
+  color: #f16c19;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.footer .social-media-link:hover {
+  text-decoration: underline;
+}
+
 /* Medium Screens */
 @media (min-width: 600px) and (max-width:900px) {
   nav .logo {
@@ -224,8 +261,9 @@ aside h4 {
     height: auto;
   }
 
-  footer {
-    text-align: unset;
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -240,7 +278,6 @@ aside h4 {
 
   nav .logo {
     width: 30%;
-    /* text-align: left; */
   }
   
   nav ul {
@@ -261,7 +298,8 @@ aside h4 {
     height: auto;
   }
 
-  footer {
-    text-align: unset;
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
