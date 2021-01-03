@@ -20,7 +20,7 @@ header {
   grid-area: 2/1/auto/13;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto auto;
+  grid-auto-rows: auto;
   gap: 10px;
 }
 
@@ -42,9 +42,7 @@ footer {
 
 .wrapper aside {
   grid-area: 2/1/auto/13;
-  border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 5px;
 }
 
 nav {
@@ -141,7 +139,7 @@ h3 {
   margin: 15px 0;
 }
 
-.blog-card button a{
+.blog-card button{
   background-color: #c70039;
   border: 1px solid #c70039;
   font-family: 'Raleway', sans-serif;
@@ -150,12 +148,15 @@ h3 {
   margin-top: 15px;
   cursor: pointer;
   text-transform: capitalize;
+}
+
+.blog-card button a{
   color: #fff;
   text-decoration: none;
 }
 
-.blog-card button a:hover,
-.blog-card button a:focus {
+.blog-card button:hover,
+.blog-card button:focus {
   transform: scale(1.03);
   background-color: #f16c19;
   border: 1px solid #f16c19;
@@ -256,6 +257,10 @@ aside h4 {
     grid-area: 1/9/auto/13;
   }
 
+  aside section {
+    padding: 10px;
+  }
+
   .blog-card img {
     width: 100%;
     height: auto;
@@ -292,6 +297,11 @@ aside h4 {
   .wrapper aside {
     grid-area: 1/9/auto/13;
   }
+
+  
+aside section {
+  padding: 50px;
+}
 
   .blog-card img {
     width: 100%;
